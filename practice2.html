@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            border:10px solid black;
+        }
+    </style>
+    <script >
+    var i=0;
+    var images=[] ;
+    var time = 3000;
+    
+    images[0] = 'https://www.w3schools.com/howto/img_nature_wide.jpg';
+    images[1] = 'sujithpic.jpg';
+    images[2] = 'funiture.jpg';
+    images[3] = 'pic.jpg';
+
+    function changeImg(){
+        document.slide.src = images[i];
+
+        if(i < images.length - 1)
+        {
+            i++;
+        }
+        else{
+            i=0;
+        }
+        setTimeout("changeImg()",time);
+
+       
+    }
+    window.onload = changeImg;
+    
+        </script>
+</head>
+<body>
+  <img  name="slide" src="" width="900px" height="400px" ><br><br>
+ 
+
+</body>
+
+</html>

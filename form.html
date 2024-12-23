@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            box-sizing: content-box;
+        }
+        *{
+           
+           margin:0;
+           padding:0;
+           box-sizing: border-box;
+           
+       }
+       body{
+           background-color:white;
+       }
+       .container{
+           
+          
+          height:900px;
+
+
+       }
+       .heading{
+           display:flex;
+           justify-content: space-between;
+           background-color: #fff5e4;
+       }
+       .heading img{
+           
+           display: flex;
+           justify-content: center;
+           background-color: #fff5e4;
+
+       }
+       .heading h1{
+           color: black;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           padding: 50px;
+           text-decoration: double;
+           align-content: center;
+           justify-content: center;
+           font-size: xx-large
+   
+       }
+        form{
+
+            margin: 50px;
+            width: 200px;
+            height:200px;    
+        }
+        input{
+            margin-top: auto;
+        }
+        .page{
+            padding-left:15%;
+            border: 30px solid ;
+            background-image: url(img.jpg);
+            background-repeat: no-repeat;
+            width: 700px;
+            
+           
+        }
+        .hpage{
+          padding-top:120px ;
+          padding-left:28% ;
+            align-items: center;
+            justify-content: center;
+           
+        }
+    </style>
+    <script>
+         function validateform(){
+            var name = document.myform.name.value;
+            var password =document.myform.password.value;
+            var email =document.myform.email.value;
+            if(name ==null || name=="")
+            {
+                alert(" check_your_details");
+                return false;
+            }else if(password=="" ){
+                alert("check_your_details");
+                return false;
+            }
+            else if(email==""){
+                alert("check_your_details");
+                return false;
+
+            }
+            else
+            {
+                alert("registeration completed ")
+            }
+
+
+            
+         }
+    </script>
+</head>
+<body>
+    <div class="heading">
+        <img src="icon.png" alt="KK" width="200px" height="200px">
+        <h1><center><b>KK DEPARTMENTS</b></center></h1>
+        <h4>contactno:<br>
+                 540138</h4>  
+        
+    </div>
+    <div class="hpage">
+    <div class="page">
+    <h1>HTML FORM VALIDATION</h1>
+ <form name="myform" onsubmit=" return validateform()"  >
+       <h3>NAME::</h3> <input type="text" name="name"><br>
+      <h3>PASSWORD::</h3> <input type="password" name="password"><br>
+        <h3>EMAIL::</h3> <input type="email" name="email"><br>
+       <h3>PHONE::</h3>  <input type="tel" name="phnumber"><br><br>
+       <a href="cart.html"><button>SUBMIT</button></a>
+       </form>
+  
+</div>
+</div>
+</body>
+</html>

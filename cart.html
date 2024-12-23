@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:white;
+    }
+    .container{
+        
+       
+       height:900px;
+
+
+    }
+    .navigation{
+            background-color:;
+            color:black;
+            padding-right:10px;
+            margin:10px;
+            width:auto;
+            height:100px ;
+            
+            
+            
+        }
+        .navigation ul{
+            padding: 30px;
+            font-size: x-large;
+            color: black;
+            text-decoration:double;
+        }
+        ul{
+            
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            
+        }
+        
+        .heading h4{
+            padding: 50px;
+            font-size:x-large;
+            font-family:'Times New Roman', Times, serif;
+            text-decoration: double;
+        }
+        .heading{
+                display:flex;
+                justify-content: space-between;
+                background-color: #fff5e4;
+            }
+            .heading img{
+                
+                display: flex;
+                justify-content: center;
+                background-color: #fff5e4;
+    
+            }
+            .heading h1{
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 50px;
+            text-decoration: double;
+            align-content: center;
+            justify-content: center;
+            font-size: xx-large
+            }
+    .alert{
+
+          
+          margin-left: 70px;
+        margin-right:70px ;
+          width:70%px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 3%;
+        
+    }
+    .alert .img{
+       
+       
+        
+    }
+    .alert .info {
+        margin-top:30px ;
+      margin-left: 50px;
+      font-style: oblique;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       
+    }
+    .alert button{
+        width: 100px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #fff5e4 ;
+        font-size: medium;
+    }
+    .set1 {
+                display: flex;
+                justify-content:space-between;
+                flex-direction: row;
+                
+                
+            }
+            .items  {
+                
+                padding-left:160px;
+                padding-right: 160px;
+            
+            }
+            .grocery{
+                text-align: center;
+            
+                font-family:sans-serif;
+               
+               
+                
+            }
+            .grocery button{
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #fff5e4 ;
+        font-size: medium;
+        
+    }
+
+            #text1{
+               text-decoration:overline;
+            }
+            .cart_detail h1{
+                border: 10px solid  #fff5e4 ;
+                
+            }
+            
+           
+            
+    </style>
+    <script src="script.js">
+      
+    
+    
+      /*  var items=0;
+            function cart(){
+            this.items=this.items+1;
+            document.getElementById("al2").style.display="none";
+            document.getElementById("al1").style.display="none";
+            
+          
+        document.getElementById("h2").innerHTML=(items+"::Items added to cart");}*/
+             
+           
+
+          
+
+            
+           
+            
+       
+    
+        
+           
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <img src="icon.png" alt="KK" width="200px" height="200px">
+            <h1><center><b>KK DEPARTMENTS</b></center></h1>
+            <h4>contactno:<br>
+                     540138</h4>  
+            
+        </div>
+        <div class="navigation">
+            <ul type="none">
+                <li ><a href="/index7(prac).html">Home</a></li>
+                <li><a href="https://www.amazon.in/s?k=all+items&crid=305QR9JLJM0C4&sprefix=all+items%2Caps%2C290&ref=nb_sb_noss_1">items</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href = "/cart.html">cart</a></li>
+                <li><a href="https://www.aboutamazon.in/news/small-business/go-desi-taking-rural-indias-tangy-candies-to-the-world">Portrait</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="alert">
+            <div class="cart_detail">
+                <h1  id="h2"> </h1>
+            </div><br><br>
+            <div class="img" id="al1">
+             <img src="cart_img-removebg-preview.png"  alt="">
+             </div>
+             <div class="info" id="al2">
+                <h1>your cart  is feeling hungery <br>add some thing</h1><BR>
+                <a href="##"><button id="signup" >Signpup</button></a>  
+                <a href=""><button id="signin" >Signin</button></a>           
+             </div>
+            
+             
+        </div><br>
+        <div class="items"><h1 id="text1"><center>Snacks</center></h1><br>
+        <div class="set1">
+            <div class="grocery">
+             <a href="/order.html"> <img src="https://images-eu.ssl-images-amazon.com/images/I/81KnI09yFEL._AC_UL160_SR160,160_.jpg" alt="" width="200px" height="200px"></a>
+               <br>
+               <h2 >Dairy milks</h2><button id="b_c" onclick="cart();">add to cart</button> 
+            </div>
+            <div class="grocery">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/719CKBIuIeL._AC_UL160_SR160,160_.jpg" alt="" width="200px" height="200px">
+                <br><h2 >Bingo</h2><button onclick="cart()",onclick="style.display:none">add to cart</button>
+             </div>
+             <div class="grocery">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71aIffG-kCL._AC_UL160_SR160,160_.jpg" alt="" width="200px" height="200px">
+                    <br><h2>Black Bourbon<br><button button onclick="cart()">add to cart</button>   </h2>
+            </div>
+            <div class="grocery">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61lwa8jWH3L._AC_UL160_SR160,160_.jpg" alt="" width="200px" height="200px">
+                <br><h2>Dairy milks<br><button  onclick="cart()">add to cart</button>   </h2>
+        </div>
+            </div><br><br><h1 id="text1"><center>Health care</center></h1><br>
+            <div class="set1">
+                <div class="grocery">
+                 <a href="/order.html"> <img src="https://m.media-amazon.com/images/I/518lWIhzFNL._AC_SR320,320_.jpg" alt="" width="200px" height="200px"></a>
+                   <br>
+                   <h2 id="h21">protinex </h2><button onclick="cart()">add to cart</button>  
+                </div>
+                <div class="grocery">
+                    <img src="https://m.media-amazon.com/images/I/41eiacgetrL._AC_SR320,320_.jpg" alt="" width="200px" height="200px">
+                    <br><h2>Mothers plus<br><button onclick="cart()">add to cart</button>  </h2>
+                 </div>
+                 <div class="grocery">
+                        <img src="https://m.media-amazon.com/images/I/61ZY0mkpTtL._SX679_.jpg" alt="" width="200px" height="200px">
+                        <br><h2>womens plus <br><button onclick="cart()">add to cart</button>  </h2>
+                </div>
+                <div class="grocery">
+                    <img src="https://m.media-amazon.com/images/I/61VgvsRPLES._SX679_.jpg" alt="" width="200px" height="200px">
+                    <br><h2>Diabetes PLus <br><button onclick="cart()">add to cart</button>  </h2>
+            </div>
+                </div><br><br><h1 id="text1"><center>Beauty</center></h1><br>
+                <div class="set1">
+                    <div class="grocery">
+                     <a href="/order.html"> <img src="https://m.media-amazon.com/images/I/51h2fKU8AcL._AC_UL320_.jpg" alt="" width="200px" height="200px"></a>
+                       <br>
+                       <h2>ponds men <br><button onclick="cart()">add to cart</button>  </h2>
+                    </div>
+                    <div class="grocery">
+                        <img src="https://m.media-amazon.com/images/I/311EqpMD5UL._AC_SR320,320_.jpg" alt="" width="200px" height="200px">
+                        <br><h2>Villain jell<br><button onclick="cart()">add to cart</button>  </h2>
+                     </div>
+                     <div class="grocery">
+                            <img src="https://m.media-amazon.com/images/I/61ConUYgKaL._AC_UL320_.jpg" alt="" width="200px" height="200px">
+                            <br><h2>Nivea soft <br><button onclick="cart()">add to cart</button>  </h2>
+                    </div>
+                    <div class="grocery">
+                        <img src="https://m.media-amazon.com/images/I/61lmO0H85iL._AC_UL320_.jpg" alt="" width="200px" height="200px">
+                        <br><h2> Spawake <br><button onclick="cart()">add to cart</button>  </h2>
+                </div>
+                    </div><br><br><h1 id="text1"><center>Shoes</center></h1><br>
+                    <div class="set1">
+                        <div class="grocery">
+                         <a href="/order.html"> <img src="https://m.media-amazon.com/images/I/71ZSYJXb0GL._UY575_.jpg" alt="" width="200px" height="200px"></a>
+                           <br>
+                           <h2>sneakers<br><button onclick="cart()">add to cart</button>  </h2>
+                        </div>
+                        <div class="grocery">
+                            <img src="https://m.media-amazon.com/images/I/41HVzqR2ynL._AC_SR320,320_.jpg" alt="" width="200px" height="200px">
+                            <br><h2>Asian cosco<br><button onclick="cart()">add to cart</button>  </h2>
+                         </div>
+                         <div class="grocery">
+                                <img src="https://m.media-amazon.com/images/I/41TjmNYdGTS._AC_SR320,320_.jpg" alt="" width="200px" height="200px">
+                                <br><h2>krassa tesla-44<br><button onclick="cart()">add to cart</button>  </h2>
+                        </div>
+                        <div class="grocery">
+                            <img src="https://m.media-amazon.com/images/I/41eImDnQx6L._AC_SR320,320_.jpg" alt="" width="200px" height="200px">
+                            <br><h2>Asian cosco-13 <br><button onclick="cart()">add to cart</button>  </h2>
+                    </div>
+                        </div>
+    </div>
+
+     </div>
+       
+</body>
+</html>
